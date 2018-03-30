@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Loading Spinner Demo</title>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/spin.js"></script>
+    <script src="Scripts/angular-spinner.min.js"></script>
+    <script src="Scripts/app/app.js"></script>
+    <script src="Scripts/app/loading-spinner.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="indexController">
+        <span us-spinner="{radius:30, width:4, length:10}"></span>
+        <button ng-click="callApi()">Api Call</button>
+        <span>{{Name}}</span>
+        <p>
+            <b>Spinner Active:</b> {{spinnerActive}}
+        </p>
+    </div>
+</body>
+</html>
